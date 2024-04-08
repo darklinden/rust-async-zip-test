@@ -1,0 +1,17 @@
+[package]
+name = "rust-async-zip-test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.81"
+env_logger = "0.11.3"
+log = "0.4.21"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.107"
+tokio = { version = "1.37.0", features = ["full"] }
+async_zip = { version = "0.0.17", features = ["full", "tokio"] }
+bytes = "1.6.0"
+futures-lite = { version = "2.3", default-features = false, features = ["std"] }
